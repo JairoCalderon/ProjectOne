@@ -1,6 +1,6 @@
 header{
-    height: 50vh;
-    background: url(../under-the-sea-assets/header-image.jpg) center / contain no-repeat;
+    height: 68vh;
+    background: url(../under-the-sea-assets/header-image.jpg) center / cover no-repeat;
 }
 
 
@@ -10,10 +10,13 @@ header{
 }
 
 .headerTextContainer{
-    width: 50%;
+    max-width: 35%;
+    flex: 0 2 auto;
 }
 .headerImgContainer{
     position: absolute;
-    width: 50%;
+    top: 18%;
+    right: -10%;
+    width: 67.5%;
 
 }

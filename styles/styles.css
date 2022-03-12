@@ -252,6 +252,17 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 29px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 h1, h2, h3, h4 {
@@ -288,7 +299,7 @@ h4 {
 
 .wrapper {
   max-width: 1200px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -304,4 +315,60 @@ button {
   font-size: 1rem;
   line-height: 32px;
   letter-spacing: 1px;
+}
+
+.navTab ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  right: 10%;
+}
+.navTab ul li {
+  margin: 0 5px;
+  padding: 10px 10px;
+  border: 1px solid black;
+}
+
+header {
+  height: 68vh;
+  background: url(../under-the-sea-assets/header-image.jpg) center/cover no-repeat;
+}
+
+.headerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.headerTextContainer {
+  max-width: 35%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 2 auto;
+          flex: 0 2 auto;
+}
+
+.headerImgContainer {
+  position: absolute;
+  top: 18%;
+  right: -10%;
+  width: 67.5%;
+}
+
+.section1 {
+  background-color: #0c1423;
+  height: 500px;
+}
+
+.section1Text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 100px 0;
 }
