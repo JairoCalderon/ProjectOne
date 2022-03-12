@@ -3,9 +3,6 @@
     padding: 0;
 }
 
-html{
-    font-size: 125%;
-}
 .wrapper{
     max-width: 1200px;
     width: 90%;
@@ -18,10 +15,10 @@ img{
     height: auto;
 }
 
-ul{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
+button{
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 32px;
+    letter-spacing: 1px;
 }

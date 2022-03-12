@@ -1,0 +1,19 @@
+header{
+    height: 50vh;
+    background: url(../under-the-sea-assets/header-image.jpg) center / contain no-repeat;
+}
+
+
+.headerContainer{
+    display: flex;
+    position: relative;
+}
+
+.headerTextContainer{
+    width: 50%;
+}
+.headerImgContainer{
+    position: absolute;
+    width: 50%;
+
+}
