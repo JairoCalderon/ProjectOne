@@ -1,10 +1,103 @@
 .section1{
     background-color: $quaternary;
-    height: 500px;
+    height: 650px;
 }
 
 .section1Text{
     display: flex;
     flex-direction: column;
-    padding: 100px 0;
+    padding: 200px 0;
+    width: 90%;
+    margin: 0 auto;
+
+    h3{
+        padding-bottom: 30px;
+    }
+    p{
+        padding-bottom: 30px;
+    }
+    a{
+        text-transform: uppercase;
+        font-family: 'Barlow', sans-serif;
+        display: inline-block;
+        padding: 10px;
+        width: 180px;
+        text-align: center;
+        background-color: $primary;
+        color: $quaternary;
+        align-self: center;
+    }
+}
+.section2{
+    background-color: $secondary;
+}
+.additions{
+    display: flex;
+    padding-bottom: 50px;
+
+    .addTextContainer{
+        max-width: 50%;
+    }
+    .addImgContainer{
+        width: 50%;
+
+        .addImgSubContainer{
+            width: 80%;
+            box-shadow: 30px 30px $primary;
+            position: relative;
+            top: -30px;
+        }
+
+    }
+}
+.nemo{
+    display: flex;
+
+    .nemoTextContainer{
+        max-width: 50%;
+    }
+    .nemoImgContainer{
+        width: 50%;
+
+        .nemoImgSubContainer{
+            width: 80%;
+            box-shadow: -30px 30px $primary;
+            position: relative;
+            top: 30px;
+            
+        }
+    }
+}
+
+.section4{
+
+    .imgBGContainer{
+        background: url(../under-the-sea-assets/banner.jpg) center / contain no-repeat;
+        max-width: 100%;
+        height: 400px;
+    }
+    .profile{
+        background-color: $quaternary;
+        display: flex;
+        padding: 75px 0;
+    }
+}
+
+.gallery{
+    background-color: $secondary;
+    padding: 50px 0;
+}
+.gallery ul{
+    display: flex;
+    justify-content: space-around;
+
+    li{
+        width: calc((100% / 3) - 20px);
+    }
+}
+
+footer{
+    background-color: $quaternary;
+    text-align: center;
+    
 }
