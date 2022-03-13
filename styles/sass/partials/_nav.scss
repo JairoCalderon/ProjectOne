@@ -1,13 +1,10 @@
 .navTab ul{
     display: flex;
-    position: absolute;
-    top: 0px;
-    right: 10%;
-
+    justify-content: end;
+   
     li{
         margin: 0 5px;
-        padding: 10px 10px;
-        border: 1px solid black;    
+       
     }
 }
 

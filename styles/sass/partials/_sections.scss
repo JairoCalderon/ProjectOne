@@ -17,15 +17,15 @@
         padding-bottom: 30px;
     }
     a{
-        text-transform: uppercase;
-        font-family: 'Barlow', sans-serif;
-        display: inline-block;
-        padding: 10px;
         width: 180px;
-        text-align: center;
-        background-color: $primary;
-        color: $quaternary;
         align-self: center;
+        background-color: $primary;
+        color: $quaternary; 
+        
+        &:hover,
+        &:focus{
+            background-color: $tertiary;
+        }
     }
 }
 
@@ -42,33 +42,26 @@
     }
 
     a{
-        text-transform: uppercase;
-        font-family: 'Barlow', sans-serif;
-        display: inline-block;
-        padding: 10px;
         width: 180px;
         text-align: center;
         background-color: $quaternary;
         color: $tertiary;
-        align-self: center;
         margin-bottom: 30px;
+
+        &:hover,
+        &:focus{
+            background-color: $tertiary;
+            color: $quaternary;
+        }
         
     }
 }
 .additions{
     display: flex;
-    // padding-bottom: 10px;
-
-    .addTextContainer{
-        max-width: 50%;
-
-        .addTextSubContainer{
-            width: 100%;
-            padding-left: 130px;
-        }
-    }
+    padding-bottom: 50px;
+    
     .addImgContainer{
-        width: 50%;
+        width: 55%;
         position: relative;
 
         .addImgSubContainer{
@@ -76,35 +69,44 @@
             box-shadow: 30px 30px $primary;
             position: absolute;
             top: -30px;
-            right: 25%;
+            right: 22.75%;
         }
+    }
 
+    .addTextContainer{
+        max-width: 45%;
+
+        .addTextSubContainer{
+            width: 100%;
+            padding-left: 25px;
+        }
     }
 }
 
 .nemo{
     display: flex;
+    padding-bottom: 25px;
 
     .nemoTextContainer{
-        max-width: 50%;
+        max-width: 45%;
 
         .nemoTextSubContainer{
             width: 100%;
             text-align: right;
-            padding-right: 130px;
+            padding-right: 25px;
         }
     }
 
     .nemoImgContainer{
-        width: 50%;
+        width: 55%;
         position: relative;
 
         .nemoImgSubContainer{
             width: 100%;
             box-shadow: -30px 30px $primary;
             position: absolute;
-            top: 60px;
-            right: -25%;
+            top: 50px;
+            right: -22.75%;
             
         }
     }
@@ -124,15 +126,40 @@
         .blog, .intouch{
             width: calc(50% - 50px);
             margin: 20px auto;
+            position: relative;
 
             h4{
                 margin-bottom: 20px;
+
+                &::before{
+                    content: "";
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: $primary;
+                    position: absolute;
+                    top: -5px;
+                    left: -60px;
+                }
             }
         }
-    
+
+        .locations i{
+            position:absolute;
+            top:2.5px;
+            left: -55px;
+            z-index: 10;
+            // width: 30px;
+            // height: 30px;
+            // border-radius: 50%;
+            // background-color: $primary;
+            color: $quaternary;
+            // text-align: center;
+            // align-self: center;
+            font-size: 2rem;
+
+        }
     }
-
-
 }
 
 .section4{
@@ -144,13 +171,11 @@
         height: 400px;
     }
     .profile{
-        // background-color: $quaternary;
         display: flex;
         padding: 75px 0;
 
         .profileImgContainer{
             width: 35%;
-            // margin-left: 10%;
             
             img{
                 box-shadow: 30px 30px 0px $primary;
@@ -158,8 +183,8 @@
         }
 
         .profileTextContainer{
-            width: 50%;
-            // margin-right: 10%;
+            width: 65%;
+            margin-left: 50px;
 
             h3{
                 text-align: left;
@@ -171,19 +196,17 @@
             }
 
             a{
-                text-transform: uppercase;
-                font-family: 'Barlow', sans-serif;
-                display: inline-block;
-                padding: 10px;
                 width: 180px;
                 text-align: center;
                 background-color: $primary;
-                color: $quaternary;
-                // align-self: center;
+                color: $quaternary; 
+
+                &:hover,
+                &:focus{
+                    background-color: $tertiary;
+                }
             }
         }
-
-       
     }
 }
 
@@ -201,7 +224,8 @@
 }
 
 footer{
-    background-color: $quaternary;
+    background-color: $primary;
     text-align: center;
+    color: $quaternary;
     
 }

@@ -246,23 +246,30 @@ body {
   color: #ffffff;
 }
 
+nav {
+  font-size: 1rem;
+  line-height: 29px;
+  letter-spacing: 1px;
+}
+
 ul {
   list-style: none;
 }
 
 a {
+  display: inline-block;
+  font-family: "Barlow", sans-serif;
+  text-transform: uppercase;
   text-decoration: none;
   color: inherit;
-}
-
-nav {
-  font-family: "Barlow", sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
   text-align: center;
-  line-height: 29px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  padding: 10px;
+}
+a:hover, a:focus {
+  color: #86e0f9;
+  scale: 1.1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 h1, h2, h3, h4 {
@@ -326,19 +333,18 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  top: 0px;
-  right: 10%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 .navTab ul li {
   margin: 0 5px;
-  padding: 10px 10px;
-  border: 1px solid black;
 }
 
 header {
-  height: 68vh;
+  height: 70vh;
   background: url(../under-the-sea-assets/header-image.jpg) center/cover no-repeat;
+  position: relative;
 }
 
 .headerContainer {
@@ -346,21 +352,17 @@ header {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  padding-top: 50px;
 }
 
 .headerTextContainer {
   max-width: 35%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 2 auto;
-          flex: 0 2 auto;
 }
 
 .headerImgContainer {
   position: absolute;
-  top: 26%;
+  top: 20%;
   right: -12.5%;
   width: 70%;
 }
@@ -389,16 +391,14 @@ header {
   padding-bottom: 30px;
 }
 .section1Text a {
-  text-transform: uppercase;
-  font-family: "Barlow", sans-serif;
-  display: inline-block;
-  padding: 10px;
   width: 180px;
-  text-align: center;
-  background-color: #86e0f9;
-  color: #0c1423;
   -ms-flex-item-align: center;
       align-self: center;
+  background-color: #86e0f9;
+  color: #0c1423;
+}
+.section1Text a:hover, .section1Text a:focus {
+  background-color: #ffffff;
 }
 
 .section2 {
@@ -412,33 +412,25 @@ header {
   padding-bottom: 20px;
 }
 .section2 a {
-  text-transform: uppercase;
-  font-family: "Barlow", sans-serif;
-  display: inline-block;
-  padding: 10px;
   width: 180px;
   text-align: center;
   background-color: #0c1423;
   color: #ffffff;
-  -ms-flex-item-align: center;
-      align-self: center;
   margin-bottom: 30px;
+}
+.section2 a:hover, .section2 a:focus {
+  background-color: #ffffff;
+  color: #0c1423;
 }
 
 .additions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-.additions .addTextContainer {
-  max-width: 50%;
-}
-.additions .addTextContainer .addTextSubContainer {
-  width: 100%;
-  padding-left: 130px;
+  padding-bottom: 50px;
 }
 .additions .addImgContainer {
-  width: 50%;
+  width: 55%;
   position: relative;
 }
 .additions .addImgContainer .addImgSubContainer {
@@ -447,24 +439,32 @@ header {
           box-shadow: 30px 30px #86e0f9;
   position: absolute;
   top: -30px;
-  right: 25%;
+  right: 22.75%;
+}
+.additions .addTextContainer {
+  max-width: 45%;
+}
+.additions .addTextContainer .addTextSubContainer {
+  width: 100%;
+  padding-left: 25px;
 }
 
 .nemo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 25px;
 }
 .nemo .nemoTextContainer {
-  max-width: 50%;
+  max-width: 45%;
 }
 .nemo .nemoTextContainer .nemoTextSubContainer {
   width: 100%;
   text-align: right;
-  padding-right: 130px;
+  padding-right: 25px;
 }
 .nemo .nemoImgContainer {
-  width: 50%;
+  width: 55%;
   position: relative;
 }
 .nemo .nemoImgContainer .nemoImgSubContainer {
@@ -472,8 +472,8 @@ header {
   -webkit-box-shadow: -30px 30px #86e0f9;
           box-shadow: -30px 30px #86e0f9;
   position: absolute;
-  top: 60px;
-  right: -25%;
+  top: 50px;
+  right: -22.75%;
 }
 
 .section3 {
@@ -495,11 +495,32 @@ header {
 .section3 .getInvolved .blog, .section3 .getInvolved .intouch {
   width: calc(50% - 50px);
   margin: 20px auto;
+  position: relative;
 }
 .section3 .getInvolved .locations h4,
 .section3 .getInvolved .community h4,
 .section3 .getInvolved .blog h4, .section3 .getInvolved .intouch h4 {
   margin-bottom: 20px;
+}
+.section3 .getInvolved .locations h4::before,
+.section3 .getInvolved .community h4::before,
+.section3 .getInvolved .blog h4::before, .section3 .getInvolved .intouch h4::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #86e0f9;
+  position: absolute;
+  top: -5px;
+  left: -60px;
+}
+.section3 .getInvolved .locations i {
+  position: absolute;
+  top: 2.5px;
+  left: -55px;
+  z-index: 10;
+  color: #0c1423;
+  font-size: 2rem;
 }
 
 .section4 {
@@ -524,7 +545,8 @@ header {
           box-shadow: 30px 30px 0px #86e0f9;
 }
 .section4 .profile .profileTextContainer {
-  width: 50%;
+  width: 65%;
+  margin-left: 50px;
 }
 .section4 .profile .profileTextContainer h3 {
   text-align: left;
@@ -534,14 +556,13 @@ header {
   padding-bottom: 40px;
 }
 .section4 .profile .profileTextContainer a {
-  text-transform: uppercase;
-  font-family: "Barlow", sans-serif;
-  display: inline-block;
-  padding: 10px;
   width: 180px;
   text-align: center;
   background-color: #86e0f9;
   color: #0c1423;
+}
+.section4 .profile .profileTextContainer a:hover, .section4 .profile .profileTextContainer a:focus {
+  background-color: #ffffff;
 }
 
 .gallery {
@@ -562,6 +583,7 @@ header {
 }
 
 footer {
-  background-color: #0c1423;
+  background-color: #86e0f9;
   text-align: center;
+  color: #0c1423;
 }
