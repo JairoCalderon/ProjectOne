@@ -514,13 +514,30 @@ header {
   top: -5px;
   left: -60px;
 }
-.section3 .getInvolved .locations i {
+.section3 .getInvolved .locations i,
+.section3 .getInvolved .community i,
+.section3 .getInvolved .blog i, .section3 .getInvolved .intouch i {
   position: absolute;
+  color: #0c1423;
+  z-index: 10;
+  font-size: 1.5rem;
+}
+.section3 .getInvolved .locations i {
   top: 2.5px;
   left: -55px;
-  z-index: 10;
-  color: #0c1423;
   font-size: 2rem;
+}
+.section3 .getInvolved .community i {
+  top: 4.5px;
+  left: -52.5px;
+}
+.section3 .getInvolved .blog i {
+  top: 4.5px;
+  left: -47px;
+}
+.section3 .getInvolved .intouch i {
+  top: 4.5px;
+  left: -50px;
 }
 
 .section4 {
