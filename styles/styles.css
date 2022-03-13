@@ -297,6 +297,11 @@ h4 {
   padding: 0;
 }
 
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .wrapper {
   max-width: 1200px;
   width: 80%;
@@ -346,6 +351,8 @@ header {
 
 .headerTextContainer {
   max-width: 35%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-flex: 0;
       -ms-flex: 0 2 auto;
           flex: 0 2 auto;
@@ -360,7 +367,7 @@ header {
 
 .section1 {
   background-color: #0c1423;
-  height: 650px;
+  min-height: 650px;
 }
 
 .section1Text {
@@ -397,25 +404,50 @@ header {
 .section2 {
   background-color: #0f614e;
 }
+.section2 h4 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.section2 p {
+  padding-bottom: 20px;
+}
+.section2 a {
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+  display: inline-block;
+  padding: 10px;
+  width: 180px;
+  text-align: center;
+  background-color: #0c1423;
+  color: #ffffff;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-bottom: 30px;
+}
 
 .additions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 50px;
 }
 .additions .addTextContainer {
   max-width: 50%;
 }
+.additions .addTextContainer .addTextSubContainer {
+  width: 100%;
+  padding-left: 130px;
+}
 .additions .addImgContainer {
   width: 50%;
+  position: relative;
 }
 .additions .addImgContainer .addImgSubContainer {
-  width: 80%;
+  width: 100%;
   -webkit-box-shadow: 30px 30px #86e0f9;
           box-shadow: 30px 30px #86e0f9;
-  position: relative;
+  position: absolute;
   top: -30px;
+  right: 25%;
 }
 
 .nemo {
@@ -426,28 +458,90 @@ header {
 .nemo .nemoTextContainer {
   max-width: 50%;
 }
+.nemo .nemoTextContainer .nemoTextSubContainer {
+  width: 100%;
+  text-align: right;
+  padding-right: 130px;
+}
 .nemo .nemoImgContainer {
   width: 50%;
+  position: relative;
 }
 .nemo .nemoImgContainer .nemoImgSubContainer {
-  width: 80%;
+  width: 100%;
   -webkit-box-shadow: -30px 30px #86e0f9;
           box-shadow: -30px 30px #86e0f9;
-  position: relative;
-  top: 30px;
+  position: absolute;
+  top: 60px;
+  right: -25%;
 }
 
+.section3 {
+  background-color: #0c1423;
+}
+.section3 .getInvolved {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 0;
+}
+.section3 .getInvolved .locations,
+.section3 .getInvolved .community,
+.section3 .getInvolved .blog, .section3 .getInvolved .intouch {
+  width: calc(50% - 50px);
+  margin: 20px auto;
+}
+.section3 .getInvolved .locations h4,
+.section3 .getInvolved .community h4,
+.section3 .getInvolved .blog h4, .section3 .getInvolved .intouch h4 {
+  margin-bottom: 20px;
+}
+
+.section4 {
+  background-color: #0c1423;
+}
 .section4 .imgBGContainer {
   background: url(../under-the-sea-assets/banner.jpg) center/contain no-repeat;
   max-width: 100%;
   height: 400px;
 }
 .section4 .profile {
-  background-color: #0c1423;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 75px 0;
+}
+.section4 .profile .profileImgContainer {
+  width: 35%;
+}
+.section4 .profile .profileImgContainer img {
+  -webkit-box-shadow: 30px 30px 0px #86e0f9;
+          box-shadow: 30px 30px 0px #86e0f9;
+}
+.section4 .profile .profileTextContainer {
+  width: 50%;
+}
+.section4 .profile .profileTextContainer h3 {
+  text-align: left;
+  padding-bottom: 20px;
+}
+.section4 .profile .profileTextContainer p {
+  padding-bottom: 40px;
+}
+.section4 .profile .profileTextContainer a {
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+  display: inline-block;
+  padding: 10px;
+  width: 180px;
+  text-align: center;
+  background-color: #86e0f9;
+  color: #0c1423;
 }
 
 .gallery {
@@ -459,8 +553,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .gallery ul li {
   width: calc(33.3333333333% - 20px);

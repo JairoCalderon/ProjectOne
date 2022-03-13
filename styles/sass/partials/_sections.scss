@@ -1,6 +1,6 @@
 .section1{
     background-color: $quaternary;
-    height: 650px;
+    min-height: 650px;
 }
 
 .section1Text{
@@ -28,48 +28,115 @@
         align-self: center;
     }
 }
+
 .section2{
     background-color: $secondary;
+
+    h4{
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    p{
+        padding-bottom: 20px;
+    }
+
+    a{
+        text-transform: uppercase;
+        font-family: 'Barlow', sans-serif;
+        display: inline-block;
+        padding: 10px;
+        width: 180px;
+        text-align: center;
+        background-color: $quaternary;
+        color: $tertiary;
+        align-self: center;
+        margin-bottom: 30px;
+        
+    }
 }
 .additions{
     display: flex;
-    padding-bottom: 50px;
+    // padding-bottom: 10px;
 
     .addTextContainer{
         max-width: 50%;
+
+        .addTextSubContainer{
+            width: 100%;
+            padding-left: 130px;
+        }
     }
     .addImgContainer{
         width: 50%;
+        position: relative;
 
         .addImgSubContainer{
-            width: 80%;
+            width: 100%;
             box-shadow: 30px 30px $primary;
-            position: relative;
+            position: absolute;
             top: -30px;
+            right: 25%;
         }
 
     }
 }
+
 .nemo{
     display: flex;
 
     .nemoTextContainer{
         max-width: 50%;
+
+        .nemoTextSubContainer{
+            width: 100%;
+            text-align: right;
+            padding-right: 130px;
+        }
     }
+
     .nemoImgContainer{
         width: 50%;
+        position: relative;
 
         .nemoImgSubContainer{
-            width: 80%;
+            width: 100%;
             box-shadow: -30px 30px $primary;
-            position: relative;
-            top: 30px;
+            position: absolute;
+            top: 60px;
+            right: -25%;
             
         }
     }
 }
 
+.section3{
+    background-color: $quaternary;
+
+    .getInvolved{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 100px 0;
+
+        .locations,
+        .community,
+        .blog, .intouch{
+            width: calc(50% - 50px);
+            margin: 20px auto;
+
+            h4{
+                margin-bottom: 20px;
+            }
+        }
+    
+    }
+
+
+}
+
 .section4{
+    background-color: $quaternary;
 
     .imgBGContainer{
         background: url(../under-the-sea-assets/banner.jpg) center / contain no-repeat;
@@ -77,9 +144,46 @@
         height: 400px;
     }
     .profile{
-        background-color: $quaternary;
+        // background-color: $quaternary;
         display: flex;
         padding: 75px 0;
+
+        .profileImgContainer{
+            width: 35%;
+            // margin-left: 10%;
+            
+            img{
+                box-shadow: 30px 30px 0px $primary;
+            }
+        }
+
+        .profileTextContainer{
+            width: 50%;
+            // margin-right: 10%;
+
+            h3{
+                text-align: left;
+                padding-bottom: 20px;
+            }
+
+            p{
+                padding-bottom: 40px;
+            }
+
+            a{
+                text-transform: uppercase;
+                font-family: 'Barlow', sans-serif;
+                display: inline-block;
+                padding: 10px;
+                width: 180px;
+                text-align: center;
+                background-color: $primary;
+                color: $quaternary;
+                // align-self: center;
+            }
+        }
+
+       
     }
 }
 
@@ -89,7 +193,7 @@
 }
 .gallery ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
     li{
         width: calc((100% / 3) - 20px);
