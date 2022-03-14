@@ -362,16 +362,26 @@ main {
 .aside {
   padding-top: 100px;
   max-width: 40%;
+  position: relative;
 }
 .aside .sideImgContainer {
   width: 85%;
-  -webkit-box-shadow: 10px 10px #86e0f9;
-          box-shadow: 10px 10px #86e0f9;
+  position: absolute;
+  top: 70px;
+  z-index: 10;
 }
 .aside .sideTextContainer {
   margin-left: 120px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-color: #0f614e;
+  width: 65%;
+}
+.aside .sideTextContainer h5 {
+  text-transform: uppercase;
+}
+.aside .sideTextContainer h5:nth-of-type(1) {
+  padding-top: 350px;
 }
 
 .blogContent {
