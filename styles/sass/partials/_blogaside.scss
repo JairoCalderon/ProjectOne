@@ -1,8 +1,7 @@
 .aside{
     padding-top: 100px;
     max-width: 40%;
-    // position: relative;
-
+    
     .sideImgContainer{
         width: 35%;
         position: absolute;
@@ -12,7 +11,6 @@
     }
 
     .sideTextContainer{
-        // margin-left: 120px;
         flex-wrap: wrap;
         background-color: $secondary;
         width: 82%;

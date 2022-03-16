@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/efe97b2b87.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/contactstyles.css">
+    <title>Blog Post - Under the Sea</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navTab wrapper">
+            <ul>
+                <li><a href="home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#blog">blog</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+        <div class="wrapper headerContainer">
+            <div class="headerTextContainer">
+                <h1 class="titleBlog">Get in touch</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper bottomPart">
+            <div class="contactaside">
+                <div class="address">
+                    <p>infor@email.com</p>
+                    <p>123-456-7890</p>
+                    <p>123 Queesn Street West, Unit 10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>M5V2D5</p>
+                </div>
+            </div>
+
+            <section class="contact">
+                <form action="submit">
+                    <div class="tag">
+                        <div class="nameTag">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required="true">
+                        </div>
+
+                        <div class="emailTag">
+                            <label for="email">Email address</label>
+                            <input type="email" id="email" required="true">
+                        </div>
+                    </div>
+
+                    <label for="comment">Comment</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+
+                    <button type="submit">post comment</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright 2018 HackerYou</p>
+    </footer>
+</body>
+
+</html>
