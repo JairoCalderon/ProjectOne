@@ -1,5 +1,8 @@
 main{
     background-color: $quaternary;
+    position: relative;
+}
+.bottomPart{
     display: flex;
 }
 
@@ -8,17 +11,17 @@ main{
 }
 
 .postContainer{
-    position: relative;
+    width: 100%;
 }
 .headerImgContainer{
     position: absolute;
-    top: -200px;
+    top: -185px;
     box-shadow: -30px 30px $primary
 }
 .postText{
-    padding: 400px 0 0 20px;
+    padding: 65% 0 10px 40px;
     margin-left: -20px;
-    width: 90%;
+    width: 100%;
     box-shadow: -10px 10px $primary;
 
     h2{
@@ -32,44 +35,88 @@ main{
 }
 
 .comments{
-    width: 87.5%;
+    width: 100%;
     padding-top: 50px;
 
     h3{
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 }
 
-.user1{
-    display: flex;
-    padding-bottom: 30px;
-
-    .user1ImgContainer{
-        width: 60%;
-
-        img{
-            width: 100%;
-        }
-    }
-    .user1CommentContainer{
-        padding-left: 30px;
-    }
-}
-
+.user1,
 .user2{
     display: flex;
-    padding-bottom: 30px;
+    padding-bottom: 70px;
 
-    .user2ImgContainer{
-        width: 60%;
+    .userImgContainer{
+        width: 75%;
 
         img{
             width: 100%;
         }
     }
-    .user2CommentContainer{
+    .userCommentContainer{
         padding-left: 30px;
     }
+}
+
+.interact{
+    padding-bottom: 80px;
+
+    .tag{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .nameTag, 
+    .emailTag{
+        display: flex;
+        width: calc(50% - 20px);
+        flex-direction: column;
+        padding-bottom: 20px;
+
+        label{
+            padding-left: 20px;
+        }
+    }
+
+    input{
+        border: none;
+        border-bottom: 2px solid $primary;
+        background-color: $quaternary;
+        color: $secondary;
+    }
+
+    textarea{
+        width: 100%;
+        border: 2px solid $primary;
+        background-color: $quaternary;
+        padding-top: 40px;
+        color: $secondary;
+    }
+
+    label[for="comment"]{
+        position: relative;
+        top: 40px;
+        left: 20px;
+    }
+
+    button{
+        width: 100%;
+        margin-top: 20px;
+        text-transform: uppercase;
+        background-color: $secondary;
+        color: $tertiary;
+        border: none;
+        line-height: 1.8;
+
+        &:hover,
+        &:focus{
+            background-color: $tertiary;
+            color: $secondary;
+        }
+    }
+
 }
 
 footer{

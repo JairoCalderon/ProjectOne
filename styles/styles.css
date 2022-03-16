@@ -438,6 +438,7 @@ header {
 }
 .additions .addTextContainer {
   max-width: 45%;
+  padding-top: 50px;
 }
 .additions .addTextContainer .addTextSubContainer {
   width: 100%;
@@ -457,6 +458,7 @@ header {
   width: 100%;
   text-align: right;
   padding-right: 25px;
+  padding-top: 50px;
 }
 .nemo .nemoImgContainer {
   width: 55%;
