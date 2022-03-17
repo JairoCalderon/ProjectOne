@@ -337,104 +337,68 @@ button {
 }
 
 html {
-  background-color: #0c1423;
+  background-color: #233860;
 }
 
-header {
+.contactHeader {
   height: 50vh;
   background: url(../under-the-sea-assets/contact-header.jpg) center/cover no-repeat;
   position: relative;
 }
-header .headerContainer {
+.contactHeader .headerContainer {
   height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
 }
-header .headerContainer .headerTextContainer {
+.contactHeader .headerContainer .headerTextContainer {
   width: 100%;
   padding-top: 50px;
 }
 
 .contactaside {
   padding-top: 100px;
-  max-width: 40%;
+  max-width: 80%;
+  width: 30%;
+}
+.contactaside .address {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.contactaside .address p {
+  font-size: 0.8rem;
+}
+.contactaside .address p:first-child {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 1rem;
 }
 
 main {
+  height: 46.5vh;
   background-color: #0c1423;
-  position: relative;
 }
 
 .bottomPart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
-.blogContent {
-  max-width: 60%;
-}
-
-.postContainer {
-  width: 100%;
-}
-
-.headerImgContainer {
-  position: absolute;
-  top: -185px;
+.contact {
+  background-color: #0f614e;
+  padding: 50px 25px 25px 25px;
   -webkit-box-shadow: -30px 30px #86e0f9;
           box-shadow: -30px 30px #86e0f9;
+  position: absolute;
+  top: -180px;
+  right: -20px;
+  width: 70%;
 }
-
-.postText {
-  padding: 65% 0 10px 40px;
-  margin-left: -20px;
-  width: 100%;
-  -webkit-box-shadow: -10px 10px #86e0f9;
-          box-shadow: -10px 10px #86e0f9;
-}
-.postText h2 {
-  padding-bottom: 15px;
-  text-align: left;
-}
-.postText p:nth-of-type(1) {
-  padding-bottom: 40px;
-}
-
-.comments {
-  width: 100%;
-  padding-top: 50px;
-}
-.comments h3 {
-  margin-bottom: 50px;
-}
-
-.user1,
-.user2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 70px;
-}
-.user1 .userImgContainer,
-.user2 .userImgContainer {
-  width: 75%;
-}
-.user1 .userImgContainer img,
-.user2 .userImgContainer img {
-  width: 100%;
-}
-.user1 .userCommentContainer,
-.user2 .userCommentContainer {
-  padding-left: 30px;
-}
-
-.interact {
-  padding-bottom: 80px;
-}
-.interact .tag {
+.contact .tag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,8 +406,8 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.interact .nameTag,
-.interact .emailTag {
+.contact .nameTag,
+.contact .emailTag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -454,38 +418,40 @@ main {
           flex-direction: column;
   padding-bottom: 20px;
 }
-.interact .nameTag label,
-.interact .emailTag label {
+.contact .nameTag label,
+.contact .emailTag label {
   padding-left: 20px;
 }
-.interact input {
+.contact input {
   border: none;
   border-bottom: 2px solid #86e0f9;
-  background-color: #0c1423;
-  color: #0f614e;
+  background-color: #0f614e;
+  color: #0c1423;
+  font-weight: bold;
 }
-.interact textarea {
+.contact textarea {
   width: 100%;
   border: 2px solid #86e0f9;
-  background-color: #0c1423;
+  background-color: #0f614e;
   padding-top: 40px;
-  color: #0f614e;
+  color: #0c1423;
+  font-weight: bold;
 }
-.interact label[for=comment] {
+.contact label[for=message] {
   position: relative;
   top: 40px;
   left: 20px;
 }
-.interact button {
+.contact button {
   width: 100%;
   margin-top: 20px;
   text-transform: uppercase;
-  background-color: #0f614e;
+  background-color: #0c1423;
   color: #ffffff;
   border: none;
   line-height: 1.8;
 }
-.interact button:hover, .interact button:focus {
+.contact button:hover, .contact button:focus {
   background-color: #ffffff;
   color: #0f614e;
 }

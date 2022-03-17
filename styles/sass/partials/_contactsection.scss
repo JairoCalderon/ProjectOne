@@ -1,3 +1,84 @@
 main{
-    height: 60vh;
+    height: 46.5vh;
+    background-color: $quaternary;
+}
+.bottomPart{
+    display: flex;
+    position: relative;
+    
+}
+
+.contact{
+    // padding-bottom: 80px;
+    background-color: $secondary;
+    padding: 50px 25px 25px 25px;
+    box-shadow: -30px 30px $primary;
+    position: absolute;
+    top: -180px;
+    right: -20px;
+    width: 70%;
+
+    .tag{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .nameTag, 
+    .emailTag{
+        display: flex;
+        width: calc(50% - 20px);
+        flex-direction: column;
+        padding-bottom: 20px;
+
+        label{
+            padding-left: 20px;
+        }
+    }
+
+    input{
+        border: none;
+        border-bottom: 2px solid $primary;
+        background-color: $secondary;
+        color: $quaternary;
+        font-weight: bold;
+    }
+
+    textarea{
+        width: 100%;
+        border: 2px solid $primary;
+        background-color: $secondary;
+        padding-top: 40px;
+        color: $quaternary;
+        font-weight: bold;
+    }
+
+    label[for="message"]{
+        position: relative;
+        top: 40px;
+        left: 20px;
+    }
+
+    button{
+        width: 100%;
+        margin-top: 20px;
+        text-transform: uppercase;
+        background-color: $quaternary;
+        color: $tertiary;
+        border: none;
+        line-height: 1.8;
+
+        &:hover,
+        &:focus{
+            background-color: $tertiary;
+            color: $secondary;
+        }
+    }
+
+}
+
+footer{
+    background-color: $primary;
+    text-align: center;
+    color: $quaternary;
+    
 }

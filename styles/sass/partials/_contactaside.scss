@@ -1,37 +1,20 @@
 .contactaside{
     padding-top: 100px;
-    max-width: 40%;
+    max-width: 80%;
+    width: 30%;
     
-    // .sideImgContainer{
-    //     width: 35%;
-    //     position: absolute;
-    //     top: 70px;
-    //     left: 0;
-    //     z-index: 10;
-    // }
+    .address{
+        flex-wrap: wrap;
 
-    // .sideTextContainer{
-    //     flex-wrap: wrap;
-    //     background-color: $secondary;
-    //     width: 82%;
-    //     padding-bottom: 20px;
+        p{
+            font-size: 0.8rem;
+        }
 
-    //     .text1{
-    //         width: 90%;
-    //         padding: 110% 0 30px 20px;
-    //     }
-
-    //     .text2{
-    //         padding: 0 20px 0 20px;
-
-    //         ul{
-    //             list-style: inside;
-    //         }
-    //     }
-
-    //     h5{
-    //         text-transform: uppercase;
-    //         padding-bottom: 10px;
-    //     }
-    // }
+        p:first-child{
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+    }
 }

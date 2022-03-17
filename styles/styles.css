@@ -336,6 +336,10 @@ button {
   margin: 0 5px;
 }
 
+html {
+  background-color: #233860;
+}
+
 header {
   height: 70vh;
   background: url(../under-the-sea-assets/header-image.jpg) center/cover no-repeat;
