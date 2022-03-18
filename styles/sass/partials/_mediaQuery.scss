@@ -1,0 +1,75 @@
+@media(max-width: 1000px){
+
+    .headerTextContainer{
+        width: 50%;
+    }
+    .headerImgContainer{
+        width: 50%;
+        transition: 1.4s;
+    }
+}
+
+@media (max-width: 840px){
+
+    //header
+    .headerTextContainer{
+        max-width: 100%;
+        width: 100%;
+    }
+    .headerImgContainer{
+        display: none;
+    }
+
+    // section 2
+    .additions{
+        flex-direction: column;
+        // width: 100%;
+
+        .addImgContainer{
+            // width: 100%;
+
+            .AddImgSubContainer{
+                position: relative;
+                z-index: 1;
+                box-shadow: 0;
+            }
+        }
+        .addTextContainer{
+            max-width: 100%;
+        }
+    }
+
+    //section 3
+    .section3{
+        .getInvolved{
+            flex-direction: column;
+    
+            .locations,
+            .community,
+            .blog, .intouch{
+                width: 82%;
+            }
+        }
+    }
+    
+
+    //section 4
+    // .profile{
+    //     flex-direction: column;
+    // }
+    .section4{
+
+        .profile{
+
+            .profileImgContainer{
+                    display: none;
+            }
+            .profileTextContainer{
+                width: 100%;
+                margin: 0 auto;
+
+            }
+        }    
+    }
+
+}

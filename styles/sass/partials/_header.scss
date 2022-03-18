@@ -1,10 +1,12 @@
 html{
     background-color: #233860;
 } 
-
-header{
+.widerScreen{
     height: 70vh;
     background: url(../under-the-sea-assets/header-image.jpg) center / cover no-repeat;
+}
+header{
+    
     position: relative;
 }
 .headerContainer{
@@ -14,10 +16,12 @@ header{
 .headerTextContainer{
     max-width: 35%;
     flex-wrap: wrap;
+    z-index: 20;
 }
 .headerImgContainer{
     position: absolute;
     top: 20%;
     right: -12.5%;
-    width: 70%;
+    // width: 70%;
+    max-width: 770px;
 }
