@@ -1,24 +1,20 @@
 html{
     font-size: 125%;
 }
-
 body{
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
     line-height: 1.6rem;
     color: $tertiary;
 }
-
 nav{
     font-size: 1rem;
     line-height: 29px;
     letter-spacing: 1px;
 }
-
 ul{
     list-style: none;
 }
-
 a{
     display: inline-block;
     font-family: 'Barlow', sans-serif;
@@ -35,15 +31,18 @@ a{
         transition: 0.3s;
     }
 }
-
-
-
+button{
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 32px;
+    letter-spacing: 1px;
+}
 h1, h2, h3, h4{
     font-family: 'Barlow', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
 }
-
 h1{
     font-size: 6.9rem;
     line-height: 6.3rem;

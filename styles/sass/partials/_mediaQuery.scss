@@ -59,6 +59,9 @@
     // }
     .section4{
 
+        .imgBGContainer{
+            height: 15rem;
+        }
         .profile{
 
             .profileImgContainer{
@@ -67,9 +70,34 @@
             .profileTextContainer{
                 width: 100%;
                 margin: 0 auto;
+                text-align: center;
+
+                h2{
+                    text-align: center;
+                }
 
             }
         }    
     }
 
+}
+
+@media (max-width:560px){
+
+    .section4{
+
+        .imgBGContainer{
+            height: 10rem;
+        }
+    }
+
+    .gallery ul{
+        flex-direction: column;
+        align-items: center;
+
+        li{
+            width: 100%;
+            padding: 10px 0;
+        }
+    }
 }

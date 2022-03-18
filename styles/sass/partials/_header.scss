@@ -1,17 +1,15 @@
-html{
-    background-color: #233860;
-} 
 .widerScreen{
     height: 70vh;
     background: url(../under-the-sea-assets/header-image.jpg) center / cover no-repeat;
-}
-header{
-    
     position: relative;
+    // background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
 }
+// header{
+//     position: relative;
+// }
 .headerContainer{
     display: flex;
-    position: relative;
+    // position: relative;
 }
 .headerTextContainer{
     max-width: 35%;
@@ -21,7 +19,7 @@ header{
 .headerImgContainer{
     position: absolute;
     top: 20%;
-    right: -12.5%;
-    // width: 70%;
+    right: 0;
+    width: 70%;
     max-width: 770px;
 }

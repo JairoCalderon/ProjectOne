@@ -272,6 +272,14 @@ a:hover, a:focus {
   transition: 0.3s;
 }
 
+button {
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+
 h1, h2, h3, h4 {
   font-family: "Barlow", sans-serif;
   font-weight: bold;
@@ -304,12 +312,17 @@ h4 {
   letter-spacing: 1px;
 }
 
+html {
+  background-color: #233860;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
+  max-width: 1560px;
   margin: 0 auto;
 }
 
@@ -325,14 +338,6 @@ img {
   height: auto;
 }
 
-button {
-  font-family: "Barlow", sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  line-height: 32px;
-  letter-spacing: 1px;
-}
-
 .navTab ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -345,16 +350,9 @@ button {
   margin: 0 5px;
 }
 
-html {
-  background-color: #233860;
-}
-
 .widerScreen {
   height: 70vh;
   background: url(../under-the-sea-assets/header-image.jpg) center/cover no-repeat;
-}
-
-header {
   position: relative;
 }
 
@@ -362,7 +360,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
 }
 
 .headerTextContainer {
@@ -375,7 +372,8 @@ header {
 .headerImgContainer {
   position: absolute;
   top: 20%;
-  right: -12.5%;
+  right: 0;
+  width: 70%;
   max-width: 770px;
 }
 
@@ -436,6 +434,10 @@ header {
   color: #0c1423;
 }
 
+.section2 {
+  position: relative;
+}
+
 .additions {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -444,15 +446,13 @@ header {
 }
 .additions .addImgContainer {
   width: 55%;
-  position: relative;
 }
 .additions .addImgContainer .addImgSubContainer {
-  width: 100%;
   -webkit-box-shadow: 30px 30px #86e0f9;
           box-shadow: 30px 30px #86e0f9;
   position: absolute;
   top: -30px;
-  right: 22.75%;
+  left: 0;
 }
 .additions .addTextContainer {
   max-width: 45%;
@@ -478,15 +478,13 @@ header {
 }
 .nemo .nemoImgContainer {
   width: 55%;
-  position: relative;
 }
 .nemo .nemoImgContainer .nemoImgSubContainer {
-  width: 100%;
   -webkit-box-shadow: -30px 30px #86e0f9;
           box-shadow: -30px 30px #86e0f9;
   position: absolute;
-  top: 50px;
-  right: -22.75%;
+  bottom: -50px;
+  right: 0%;
 }
 
 .section3 {
@@ -559,13 +557,13 @@ header {
 .section4 .imgBGContainer {
   background: url(../under-the-sea-assets/banner.jpg) center/contain no-repeat;
   max-width: 100%;
-  height: 400px;
+  height: 25rem;
 }
 .section4 .profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 75px 0;
+  padding: 5% 0;
 }
 .section4 .profile .profileImgContainer {
   width: 35%;
@@ -667,11 +665,37 @@ footer {
     width: 82%;
   }
 
+  .section4 .imgBGContainer {
+    height: 15rem;
+  }
   .section4 .profile .profileImgContainer {
     display: none;
   }
   .section4 .profile .profileTextContainer {
     width: 100%;
     margin: 0 auto;
+    text-align: center;
+  }
+  .section4 .profile .profileTextContainer h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 560px) {
+  .section4 .imgBGContainer {
+    height: 10rem;
+  }
+
+  .gallery ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gallery ul li {
+    width: 100%;
+    padding: 10px 0;
   }
 }
