@@ -53,7 +53,6 @@
             background-color: $tertiary;
             color: $quaternary;
         }
-        
     }
 }
 .section2{
@@ -65,7 +64,6 @@
     
     .addImgContainer{
         width: 55%;
-        // position: relative;
 
         .addImgSubContainer{
             // width: 100%;
@@ -73,6 +71,7 @@
             position: absolute;
             top: -30px;
             left: 0;
+            width: 43%;
         }
     }
 
@@ -89,7 +88,6 @@
 
 .nemo{
     display: flex;
-    padding-bottom: 25px;
 
     .nemoTextContainer{
         max-width: 45%;
@@ -98,21 +96,18 @@
             width: 100%;
             text-align: right;
             padding-right: 25px;
-            // padding-top: 50px;
         }
     }
 
     .nemoImgContainer{
         width: 55%;
-        // position: relative;
 
         .nemoImgSubContainer{
-            // width: 100%;
             box-shadow: -30px 30px $primary;
             position: absolute;
-            bottom: -50px;
+            top: 57%;
             right: 0%;
-            
+            width: 42%;
         }
     }
 }

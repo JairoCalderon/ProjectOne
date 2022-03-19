@@ -1,11 +1,53 @@
+@media (max-width:1260px){
+
+    //header
+    .headerImgContainer{
+        width: 60%;
+        transition: 1.4s;
+    }
+}
+
 @media(max-width: 1000px){
 
+    //header
     .headerTextContainer{
         width: 50%;
     }
     .headerImgContainer{
-        width: 50%;
+        // width: 60%;
         transition: 1.4s;
+        top: 40%;
+    }
+
+    //Section 2
+
+    .additions{
+        padding-bottom: 0;
+        .addImgContainer{
+            align-self: center;
+            .addImgSubContainer{
+                transition: 1s;
+                box-shadow: none;
+                position: relative;
+                width: 100%;
+                top: 0;
+
+            }
+        }
+    }
+
+    .nemo{
+        .nemoImgContainer{
+            align-self: center;
+            .nemoImgSubContainer{
+                transition: 1s;
+                box-shadow: none;
+                position: relative;
+                width: 100%;
+                top: 0;
+
+            }
+        }
     }
 }
 
@@ -23,19 +65,32 @@
     // section 2
     .additions{
         flex-direction: column;
-        // width: 100%;
+        width: 100%;
+        text-align: center;
+        padding-top: 15px;
 
-        .addImgContainer{
-            // width: 100%;
-
-            .AddImgSubContainer{
-                position: relative;
-                z-index: 1;
-                box-shadow: 0;
-            }
-        }
         .addTextContainer{
             max-width: 100%;
+
+            .addTextSubContainer{
+                padding-left: 0;
+            }
+        }
+    }
+
+    .nemo{
+        flex-direction: column-reverse;
+        width: 100%;
+        padding-top: 50px;
+
+        .nemoTextContainer{
+            max-width: 100%;
+            text-align: center;
+
+            .nemoTextSubContainer{
+                padding-right: 0;
+                text-align: center;
+            }
         }
     }
 
@@ -52,11 +107,8 @@
         }
     }
     
-
     //section 4
-    // .profile{
-    //     flex-direction: column;
-    // }
+    
     .section4{
 
         .imgBGContainer{
@@ -83,6 +135,27 @@
 }
 
 @media (max-width:560px){
+    
+    //Header
+
+    .menuIcon{
+        transition: 1.4s;
+        display: block;
+        height: 40px;
+        padding-top: 10px;
+        text-align: right;
+        position: fixed;
+        
+    }
+    .navTab ul{
+        transition: 1.2s;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        right: -150px;
+    }
+
+    //Section 4
 
     .section4{
 
@@ -90,6 +163,8 @@
             height: 10rem;
         }
     }
+
+    //Gallery
 
     .gallery ul{
         flex-direction: column;

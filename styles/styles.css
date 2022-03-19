@@ -264,6 +264,7 @@ a {
   color: inherit;
   text-align: center;
   padding: 10px;
+  min-height: 40px;
 }
 a:hover, a:focus {
   color: #86e0f9;
@@ -300,6 +301,7 @@ h2 {
   font-size: 2.1rem;
   text-align: center;
   letter-spacing: 1px;
+  line-height: 2.2rem;
 }
 
 h3 {
@@ -338,6 +340,16 @@ img {
   height: auto;
 }
 
+.menuIcon {
+  display: none;
+}
+.menuIcon:hover, .menuIcon:focus {
+  color: #86e0f9;
+  scale: 1.1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .navTab ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -351,7 +363,7 @@ img {
 }
 
 .widerScreen {
-  height: 70vh;
+  height: 650px;
   background: url(../under-the-sea-assets/header-image.jpg) center/cover no-repeat;
   position: relative;
 }
@@ -373,7 +385,7 @@ img {
   position: absolute;
   top: 20%;
   right: 0;
-  width: 70%;
+  width: 65%;
   max-width: 770px;
 }
 
@@ -453,6 +465,7 @@ img {
   position: absolute;
   top: -30px;
   left: 0;
+  width: 43%;
 }
 .additions .addTextContainer {
   max-width: 45%;
@@ -466,7 +479,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 25px;
 }
 .nemo .nemoTextContainer {
   max-width: 45%;
@@ -483,8 +495,9 @@ img {
   -webkit-box-shadow: -30px 30px #86e0f9;
           box-shadow: -30px 30px #86e0f9;
   position: absolute;
-  bottom: -50px;
+  top: 57%;
   right: 0%;
+  width: 42%;
 }
 
 .section3 {
@@ -616,15 +629,53 @@ footer {
   color: #0c1423;
 }
 
+@media (max-width: 1260px) {
+  .headerImgContainer {
+    width: 60%;
+    -webkit-transition: 1.4s;
+    transition: 1.4s;
+  }
+}
 @media (max-width: 1000px) {
   .headerTextContainer {
     width: 50%;
   }
 
   .headerImgContainer {
-    width: 50%;
     -webkit-transition: 1.4s;
     transition: 1.4s;
+    top: 40%;
+  }
+
+  .additions {
+    padding-bottom: 0;
+  }
+  .additions .addImgContainer {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .additions .addImgContainer .addImgSubContainer {
+    -webkit-transition: 1s;
+    transition: 1s;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    position: relative;
+    width: 100%;
+    top: 0;
+  }
+
+  .nemo .nemoImgContainer {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .nemo .nemoImgContainer .nemoImgSubContainer {
+    -webkit-transition: 1s;
+    transition: 1s;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    position: relative;
+    width: 100%;
+    top: 0;
   }
 }
 @media (max-width: 840px) {
@@ -642,15 +693,32 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .additions .addImgContainer .AddImgSubContainer {
-    position: relative;
-    z-index: 1;
-    -webkit-box-shadow: 0;
-            box-shadow: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
   }
   .additions .addTextContainer {
     max-width: 100%;
+  }
+  .additions .addTextContainer .addTextSubContainer {
+    padding-left: 0;
+  }
+
+  .nemo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 100%;
+    padding-top: 50px;
+  }
+  .nemo .nemoTextContainer {
+    max-width: 100%;
+    text-align: center;
+  }
+  .nemo .nemoTextContainer .nemoTextSubContainer {
+    padding-right: 0;
+    text-align: center;
   }
 
   .section3 .getInvolved {
@@ -681,6 +749,28 @@ footer {
   }
 }
 @media (max-width: 560px) {
+  .menuIcon {
+    -webkit-transition: 1.4s;
+    transition: 1.4s;
+    display: block;
+    height: 40px;
+    padding-top: 10px;
+    text-align: right;
+    position: fixed;
+  }
+
+  .navTab ul {
+    -webkit-transition: 1.2s;
+    transition: 1.2s;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: -150px;
+  }
+
   .section4 .imgBGContainer {
     height: 10rem;
   }

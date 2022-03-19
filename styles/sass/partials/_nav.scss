@@ -1,3 +1,14 @@
+.menuIcon{
+    display: none;
+    
+    &:hover,
+    &:focus{
+        color: $primary;
+        scale: 1.1;
+        transition: 0.3s;
+    }
+}
+
 .navTab ul{
     display: flex;
     justify-content: end;

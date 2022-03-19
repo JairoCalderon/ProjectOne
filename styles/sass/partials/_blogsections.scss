@@ -93,6 +93,7 @@ main{
         background-color: $quaternary;
         padding-top: 40px;
         color: $secondary;
+        resize: none;
     }
 
     label[for="comment"]{
