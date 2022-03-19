@@ -14,7 +14,6 @@
         width: 50%;
     }
     .headerImgContainer{
-        // width: 60%;
         transition: 1.4s;
         top: 40%;
     }
@@ -27,9 +26,9 @@
             align-self: center;
             .addImgSubContainer{
                 transition: 1s;
-                box-shadow: none;
+                // box-shadow: none;
                 position: relative;
-                width: 100%;
+                width: 95%;
                 top: 0;
 
             }
@@ -39,11 +38,12 @@
     .nemo{
         .nemoImgContainer{
             align-self: center;
+            margin-left: 15px;
             .nemoImgSubContainer{
                 transition: 1s;
-                box-shadow: none;
+                // box-shadow: none;
                 position: relative;
-                width: 100%;
+                width: 95%;
                 top: 0;
 
             }
@@ -65,9 +65,12 @@
     // section 2
     .additions{
         flex-direction: column;
-        width: 100%;
         text-align: center;
         padding-top: 15px;
+
+        .addImgContainer{
+            width: 80%;
+        }
 
         .addTextContainer{
             max-width: 100%;
@@ -80,7 +83,6 @@
 
     .nemo{
         flex-direction: column-reverse;
-        width: 100%;
         padding-top: 50px;
 
         .nemoTextContainer{
@@ -91,6 +93,10 @@
                 padding-right: 0;
                 text-align: center;
             }
+        }
+        .nemoImgContainer{
+            width: 80%;
+            margin-left: 0;
         }
     }
 
@@ -145,6 +151,7 @@
         padding-top: 10px;
         text-align: right;
         position: fixed;
+        z-index: 30;
         
     }
     .navTab ul{

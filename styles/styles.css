@@ -315,7 +315,7 @@ h4 {
 }
 
 html {
-  background-color: #233860;
+  background-color: #0b1322;
 }
 
 * {
@@ -403,7 +403,6 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 200px 0;
-  width: 90%;
   margin: 0 auto;
 }
 .section1Text h2 {
@@ -426,6 +425,7 @@ img {
 .section2 {
   background-color: #0f614e;
   padding-bottom: 60px;
+  position: relative;
 }
 .section2 h3 {
   padding-top: 50px;
@@ -444,10 +444,6 @@ img {
 .section2 a:hover, .section2 a:focus {
   background-color: #ffffff;
   color: #0c1423;
-}
-
-.section2 {
-  position: relative;
 }
 
 .additions {
@@ -657,24 +653,21 @@ footer {
   .additions .addImgContainer .addImgSubContainer {
     -webkit-transition: 1s;
     transition: 1s;
-    -webkit-box-shadow: none;
-            box-shadow: none;
     position: relative;
-    width: 100%;
+    width: 95%;
     top: 0;
   }
 
   .nemo .nemoImgContainer {
     -ms-flex-item-align: center;
         align-self: center;
+    margin-left: 15px;
   }
   .nemo .nemoImgContainer .nemoImgSubContainer {
     -webkit-transition: 1s;
     transition: 1s;
-    -webkit-box-shadow: none;
-            box-shadow: none;
     position: relative;
-    width: 100%;
+    width: 95%;
     top: 0;
   }
 }
@@ -693,9 +686,11 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
     text-align: center;
     padding-top: 15px;
+  }
+  .additions .addImgContainer {
+    width: 80%;
   }
   .additions .addTextContainer {
     max-width: 100%;
@@ -709,7 +704,6 @@ footer {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    width: 100%;
     padding-top: 50px;
   }
   .nemo .nemoTextContainer {
@@ -719,6 +713,10 @@ footer {
   .nemo .nemoTextContainer .nemoTextSubContainer {
     padding-right: 0;
     text-align: center;
+  }
+  .nemo .nemoImgContainer {
+    width: 80%;
+    margin-left: 0;
   }
 
   .section3 .getInvolved {
@@ -757,6 +755,7 @@ footer {
     padding-top: 10px;
     text-align: right;
     position: fixed;
+    z-index: 30;
   }
 
   .navTab ul {
