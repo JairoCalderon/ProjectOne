@@ -1,4 +1,5 @@
-.menuIcon{
+label[for="toggle"],
+input[type="checkbox"]{
     display: none;
     
     &:hover,
@@ -12,6 +13,7 @@
 .navTab ul{
     display: flex;
     justify-content: end;
+
    
     li{
         margin: 0 5px;

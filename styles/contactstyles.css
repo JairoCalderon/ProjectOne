@@ -320,10 +320,13 @@ img {
   height: auto;
 }
 
-.menuIcon {
+label[for=toggle],
+input[type=checkbox] {
   display: none;
 }
-.menuIcon:hover, .menuIcon:focus {
+label[for=toggle]:hover, label[for=toggle]:focus,
+input[type=checkbox]:hover,
+input[type=checkbox]:focus {
   color: #86e0f9;
   scale: 1.1;
   -webkit-transition: 0.3s;

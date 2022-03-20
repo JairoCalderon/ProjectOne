@@ -9,6 +9,8 @@
 
 @media(max-width: 1000px){
 
+    //START OF HOME PAGE STYLE
+
     //header
     .headerTextContainer{
         width: 50%;
@@ -137,29 +139,104 @@
             }
         }    
     }
+    //END OF HOMEPAGE STYLE
 
+    //START OF BLOG PAGE STYLE
+
+        .user1,
+        .user2{
+            flex-direction: column;
+
+            .userImgContainer{
+                width: 50%;
+                margin: 0 auto;
+                padding-bottom: 10px;
+            }
+        }
+
+        .interact{
+            .tag{
+                flex-direction: column;
+            }
+            .nameTag,
+            .emailTag{
+                width: 100%;
+            }
+        }
+
+    //END OF BLOG PAGE STYLE
 }
+
+
+@media (max-width:660px){
+
+    // START OF THE BLOG PAGE
+    .bottomPart{
+        flex-direction: column-reverse;
+        padding-bottom: 20px;
+    }
+
+    .aside{
+        padding-top: 0px;
+        max-width: 100%;
+        position: relative;
+
+        .sideImgContainer{
+            width: 90%;
+            // position: relative;
+            top: 0px;
+            margin: 0 auto;
+
+        }
+        .sideTextContainer{
+            width: 90%;
+            margin: 60px 0 0 30px;
+
+            .text1{
+                padding: 75% 0 30px 20px;
+            }
+        }
+    }
+    .blogContent{
+        max-width: 100%;
+    }
+
+    //END OF BLOG PAGE STYLE
+}
+
+    
 
 @media (max-width:560px){
     
     //Header
 
-    .menuIcon{
-        transition: 1.4s;
-        display: block;
+    label[for="toggle"]{
+        display: inline-block;
         height: 40px;
-        padding-top: 10px;
-        text-align: right;
+        padding: 10px;
         position: fixed;
+        right: 60px;
         z-index: 30;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        i{
+            vertical-align: top; 
+        }
         
     }
-    .navTab ul{
-        transition: 1.2s;
+    .slideMenu{
+        transition: 2s;
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.5);
         position: absolute;
+        z-index: 30;
         right: -150px;
+    }
+
+    input[type="checkbox"]:checked + .slideMenu{
+        right: 0px;
+        top: 50px;
+        position: fixed;
     }
 
     //Section 4
@@ -182,4 +259,8 @@
             padding: 10px 0;
         }
     }
+
+    //START OF BLOG PAGE
+    
+   
 }

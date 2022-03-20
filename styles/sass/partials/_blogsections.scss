@@ -13,7 +13,7 @@ main{
 .postContainer{
     width: 100%;
 }
-.headerImgContainer{
+.postImgContainer{
     position: absolute;
     top: -185px;
     box-shadow: -30px 30px $primary
@@ -55,8 +55,13 @@ main{
             width: 100%;
         }
     }
+    
     .userCommentContainer{
         padding-left: 30px;
+
+        & p:first-child{
+            padding-bottom: 10px;
+        }
     }
 }
 
