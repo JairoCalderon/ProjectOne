@@ -350,17 +350,17 @@ header {
   background: url(../under-the-sea-assets/blog-header.jpg) center/cover no-repeat;
   position: relative;
 }
-header .headerContainer {
+header .blogHeaderContainer {
   height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
 }
-header .headerContainer .headerTextContainer {
+header .blogHeaderContainer .blogHeaderTextContainer {
   width: 100%;
 }
-header .headerContainer .headerTextContainer h1 {
+header .blogHeaderContainer .blogHeaderTextContainer h1 {
   padding-top: 60px;
 }
 
@@ -501,14 +501,14 @@ main {
   border: none;
   border-bottom: 2px solid #86e0f9;
   background-color: #0c1423;
-  color: #0f614e;
+  color: #ffffff;
 }
 .interact textarea {
   width: 100%;
   border: 2px solid #86e0f9;
   background-color: #0c1423;
   padding-top: 40px;
-  color: #0f614e;
+  color: #ffffff;
   resize: none;
 }
 .interact label[for=comment] {
@@ -537,18 +537,18 @@ footer {
 }
 
 @media (max-width: 1260px) {
-  .headerImgContainer {
+  .homeHeaderImgContainer {
     width: 60%;
     -webkit-transition: 1.4s;
     transition: 1.4s;
   }
 }
 @media (max-width: 1000px) {
-  .headerTextContainer {
+  .homeHeaderTextContainer {
     width: 50%;
   }
 
-  .headerImgContainer {
+  .homeHeaderImgContainer {
     -webkit-transition: 1.4s;
     transition: 1.4s;
     top: 40%;
@@ -581,14 +581,35 @@ footer {
     width: 95%;
     top: 0;
   }
+
+  .contentPart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .contactaside {
+    padding-top: 50px;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact {
+    position: relative;
+    top: -100px;
+    right: 0;
+    width: 100%;
+  }
 }
 @media (max-width: 840px) {
-  .headerTextContainer {
+  .homeHeaderTextContainer {
     max-width: 100%;
     width: 100%;
   }
 
-  .headerImgContainer {
+  .homeHeaderImgContainer {
     display: none;
   }
 
@@ -711,6 +732,17 @@ footer {
 
   .blogContent {
     max-width: 100%;
+  }
+
+  .contact .tag {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .nameTag,
+.contact .emailTag {
+    width: 100%;
   }
 }
 @media (max-width: 560px) {

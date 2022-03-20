@@ -55,7 +55,7 @@ main{
             width: 100%;
         }
     }
-    
+
     .userCommentContainer{
         padding-left: 30px;
 
@@ -89,7 +89,7 @@ main{
         border: none;
         border-bottom: 2px solid $primary;
         background-color: $quaternary;
-        color: $secondary;
+        color: $tertiary;
     }
 
     textarea{
@@ -97,7 +97,7 @@ main{
         border: 2px solid $primary;
         background-color: $quaternary;
         padding-top: 40px;
-        color: $secondary;
+        color: $tertiary;
         resize: none;
     }
 

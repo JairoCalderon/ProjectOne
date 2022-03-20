@@ -1,10 +1,11 @@
 main{
-    height: 46.5vh;
+    // height: 46.5vh;
     background-color: $quaternary;
 }
-.bottomPart{
+.contentPart{
     display: flex;
     position: relative;
+    margin-bottom: 50px;
     
 }
 

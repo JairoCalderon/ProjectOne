@@ -371,20 +371,20 @@ input[type=checkbox]:focus {
   position: relative;
 }
 
-.headerContainer {
+.homeHeaderContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.headerTextContainer {
+.homeHeaderTextContainer {
   max-width: 35%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   z-index: 20;
 }
 
-.headerImgContainer {
+.homeHeaderImgContainer {
   position: absolute;
   top: 20%;
   right: 0;
@@ -629,18 +629,18 @@ footer {
 }
 
 @media (max-width: 1260px) {
-  .headerImgContainer {
+  .homeHeaderImgContainer {
     width: 60%;
     -webkit-transition: 1.4s;
     transition: 1.4s;
   }
 }
 @media (max-width: 1000px) {
-  .headerTextContainer {
+  .homeHeaderTextContainer {
     width: 50%;
   }
 
-  .headerImgContainer {
+  .homeHeaderImgContainer {
     -webkit-transition: 1.4s;
     transition: 1.4s;
     top: 40%;
@@ -673,14 +673,35 @@ footer {
     width: 95%;
     top: 0;
   }
+
+  .contentPart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .contactaside {
+    padding-top: 50px;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact {
+    position: relative;
+    top: -100px;
+    right: 0;
+    width: 100%;
+  }
 }
 @media (max-width: 840px) {
-  .headerTextContainer {
+  .homeHeaderTextContainer {
     max-width: 100%;
     width: 100%;
   }
 
-  .headerImgContainer {
+  .homeHeaderImgContainer {
     display: none;
   }
 
@@ -803,6 +824,17 @@ footer {
 
   .blogContent {
     max-width: 100%;
+  }
+
+  .contact .tag {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .nameTag,
+.contact .emailTag {
+    width: 100%;
   }
 }
 @media (max-width: 560px) {

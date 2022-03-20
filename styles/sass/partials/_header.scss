@@ -5,15 +5,15 @@
     // background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
 }
 
-.headerContainer{
+.homeHeaderContainer{
     display: flex;
 }
-.headerTextContainer{
+.homeHeaderTextContainer{
     max-width: 35%;
     flex-wrap: wrap;
     z-index: 20;
 }
-.headerImgContainer{
+.homeHeaderImgContainer{
     position: absolute;
     top: 20%;
     right: 0;
