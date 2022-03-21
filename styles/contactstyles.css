@@ -320,6 +320,10 @@ img {
   height: auto;
 }
 
+.navTab {
+  position: relative;
+}
+
 label[for=toggle],
 input[type=checkbox] {
   display: none;
@@ -678,12 +682,16 @@ footer {
   }
 }
 @media (max-width: 560px) {
+  .homeHeaderTextContainer h1 {
+    font-size: 2.5rem;
+  }
+
   label[for=toggle] {
     display: inline-block;
     height: 40px;
     padding: 10px;
     position: fixed;
-    right: 60px;
+    left: 60px;
     z-index: 30;
     background-color: rgba(0, 0, 0, 0.5);
   }
@@ -701,11 +709,11 @@ footer {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     z-index: 30;
-    right: -150px;
+    left: -500px;
   }
 
   input[type=checkbox]:checked + .slideMenu {
-    right: 0px;
+    left: 0px;
     top: 50px;
     position: fixed;
   }
