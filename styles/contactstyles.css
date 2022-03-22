@@ -337,7 +337,7 @@ input[type=checkbox]:focus {
   transition: 0.3s;
 }
 
-.navTab ul {
+.slideMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,7 +345,7 @@ input[type=checkbox]:focus {
       -ms-flex-pack: end;
           justify-content: end;
 }
-.navTab ul li {
+.slideMenu li {
   margin: 0 5px;
 }
 
@@ -478,6 +478,10 @@ footer {
     -webkit-transition: 1.4s;
     transition: 1.4s;
   }
+
+  .postText h2 {
+    line-height: 1.2;
+  }
 }
 @media (max-width: 1000px) {
   .homeHeaderTextContainer {
@@ -488,6 +492,12 @@ footer {
     -webkit-transition: 1.4s;
     transition: 1.4s;
     top: 40%;
+  }
+
+  .section1Text {
+    padding: 100px 0;
+    -webkit-transition: 1.2s;
+    transition: 1.2s;
   }
 
   .additions {
@@ -545,8 +555,10 @@ footer {
     width: 100%;
   }
 
-  .homeHeaderImgContainer {
-    display: none;
+  h1.homePageTitle {
+    font-size: 5.2rem;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
   }
 
   .additions {
@@ -640,6 +652,17 @@ footer {
   }
 }
 @media (max-width: 660px) {
+  h1.homePageTitle {
+    font-size: 3.6rem;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    -webkit-transition: 1.2s;
+    transition: 1.2s;
+  }
+
   .bottomPart {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -682,8 +705,31 @@ footer {
   }
 }
 @media (max-width: 560px) {
-  .homeHeaderTextContainer h1 {
-    font-size: 2.5rem;
+  h1.homePageTitle,
+h1.sidePageTitle {
+    font-size: 3rem;
+    -webkit-transition: 1.2s;
+    transition: 1.2s;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    -webkit-transition: 1.2s;
+    transition: 1.2s;
+  }
+
+  .widerScreen {
+    height: 500px;
+    -webkit-transition: 1.2s;
+    transition: 1.2s;
+  }
+
+  .homeHeaderContainer {
+    padding-top: 50%;
+  }
+
+  .homeHeaderImgContainer {
+    display: none;
   }
 
   label[for=toggle] {
@@ -694,14 +740,15 @@ footer {
     left: 60px;
     z-index: 30;
     background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
   }
   label[for=toggle] i {
     vertical-align: top;
   }
 
   .slideMenu {
-    -webkit-transition: 2s;
-    transition: 2s;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -714,7 +761,7 @@ footer {
 
   input[type=checkbox]:checked + .slideMenu {
     left: 0px;
-    top: 50px;
+    top: 60px;
     position: fixed;
   }
 
@@ -734,5 +781,12 @@ footer {
   .gallery ul li {
     width: 100%;
     padding: 10px 0;
+  }
+
+  .blogHeader,
+.contactHeader {
+    height: 450px;
+    -webkit-transition: 1.2s;
+    transition: 1.2s;
   }
 }

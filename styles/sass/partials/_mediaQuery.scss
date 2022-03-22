@@ -1,17 +1,27 @@
 @media (max-width:1260px){
-
-    //header
+//START OF HOME PAGE STYLE
+    //Header
     .homeHeaderImgContainer{
         width: 60%;
         transition: 1.4s;
     }
+//END OF HOME PAGE STYLE
+
+//START OF CCONTACT PAGE STYLE
+    .postText{
+        h2{
+            line-height: 1.2;
+        }
+    }
+//END OF CCONTACT PAGE STYLE
+
 }
 
 @media(max-width: 1000px){
 
-    //START OF HOME PAGE STYLE
+//START OF HOME PAGE STYLE
 
-    //header
+    //HEADER
     .homeHeaderTextContainer{
         width: 50%;
     }
@@ -20,7 +30,14 @@
         top: 40%;
     }
 
-    //Section 2
+    // Section 1 - what is under the sea
+    
+    .section1Text{
+        padding: 100px 0;
+        transition: 1.2s;
+    }
+
+    // Section 2 - new add and meet nemo
 
     .additions{
         padding-bottom: 0;
@@ -51,9 +68,9 @@
             }
         }
     }
-    //END OF HOME PAGE STYLE
+//END OF HOME PAGE STYLE
 
-    //START OF CONTACT PAGE STYLE
+//START OF CONTACT PAGE STYLE
 
     .contentPart{
         flex-direction: column-reverse;
@@ -71,23 +88,25 @@
         right: 0;
         width: 100%;
     }
-    //END OF CONTACT PAGE STYLE
+//END OF CONTACT PAGE STYLE
     
 }
 
 
 @media (max-width: 840px){
-
+//START OF HOME PAGE STYLE
     //header
     .homeHeaderTextContainer{
         max-width: 100%;
         width: 100%;
     }
-    .homeHeaderImgContainer{
-        display: none;
-    }
 
-    // section 2
+    h1.homePageTitle{
+        font-size: 5.2rem;
+        transition: 0.6s;
+    }
+    
+    // Section 2 - new add and meet nemo
     .additions{
         flex-direction: column;
         text-align: center;
@@ -125,7 +144,7 @@
         }
     }
 
-    //section 3
+    // section 3 - get in touch
     .section3{
         .getInvolved{
             flex-direction: column;
@@ -138,7 +157,7 @@
         }
     }
     
-    //section 4
+    // Section 4 - month profile
     
     .section4{
 
@@ -162,10 +181,12 @@
             }
         }    
     }
-    //END OF HOMEPAGE STYLE
+//END OF HOMEPAGE STYLE
 
-    //START OF BLOG PAGE STYLE
-
+//START OF BLOG PAGE STYLE
+        // h1.titleBlog{
+        //     font-size: 4rem;
+        // }
         .user1,
         .user2{
             flex-direction: column;
@@ -187,13 +208,26 @@
             }
         }
 
-    //END OF BLOG PAGE STYLE
+//END OF BLOG PAGE STYLE
 }
 
 
 @media (max-width:660px){
+//START OF HOMEPAGE STYLE
+    // Home Page
+    
+    h1.homePageTitle{
+        font-size: 3.6rem;
+        line-height: 1.2;
+    }
+    h2{
+        font-size: 1.8rem;
+        transition: 1.2s;
+    }
+//END OF HOMEPAGE STYLE  
 
-    // START OF THE BLOG PAGE
+// START OF THE BLOG PAGE
+
     .bottomPart{
         flex-direction: column-reverse;
         padding-bottom: 20px;
@@ -224,9 +258,9 @@
         max-width: 100%;
     }
 
-    //END OF BLOG PAGE STYLE
+//END OF BLOG PAGE STYLE
 
-    //START OF CONTACT PAGE STYLE
+//START OF CONTACT PAGE STYLE
     
     .contact{
         .tag{
@@ -236,23 +270,33 @@
         .emailTag{
             width: 100%;
         }
-    }
-    
-    //END OF CONTACT PAGE STYLE
-    
+    } 
+
+//END OF CONTACT PAGE STYLE  
 }
 
-    
-
 @media (max-width:560px){
-    
-    //Header
-    // .wrapper{
-    //     width: 100%;
-    // }
+    h1.homePageTitle,
+    h1.sidePageTitle{
+        font-size: 3rem;
+        transition: 1.2s;
+    }
 
-    .homeHeaderTextContainer h1{
-        font-size: 2.5rem;
+    h3{
+        font-size: 1.2rem;
+        transition: 1.2s;
+    }
+    //Header
+    .widerScreen{
+        height: 500px;
+        transition: 1.2s;
+    }
+    .homeHeaderContainer{
+        padding-top: 50%;
+    }
+    
+    .homeHeaderImgContainer{
+        display: none;
     }
 
     label[for="toggle"]{
@@ -263,6 +307,7 @@
         left: 60px;
         z-index: 30;
         background-color: rgba(0, 0, 0, 0.5);
+        margin-top: 10px;
 
         i{
             vertical-align: top; 
@@ -270,7 +315,7 @@
         
     }
     .slideMenu{
-        transition: 2s;
+        transition: 0.6s;
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.5);
         position: absolute;
@@ -280,7 +325,7 @@
 
     input[type="checkbox"]:checked + .slideMenu{
         left: 0px;
-        top: 50px;
+        top: 60px;
         position: fixed;
     }
 
@@ -306,6 +351,11 @@
     }
 
     //START OF BLOG PAGE
-    
+    .blogHeader,
+    .contactHeader{
+        height: 450px;
+        transition: 1.2s;
+        
+    }
    
 }

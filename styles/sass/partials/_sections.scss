@@ -1,6 +1,6 @@
+// SECTION 1 - WHAT IS UNDER THE SEA
 .section1{
     background-color: $quaternary;
-    min-height: 650px;
 }
 .section1Text{
     display: flex;
@@ -27,6 +27,7 @@
     }
 }
 
+// SECTION 2 - NEW ADD AND MEET NEMO
 .section2{
     background-color: $secondary;
     padding-bottom: 60px;
@@ -55,7 +56,7 @@
         }
     }
 }
-
+        // UPPER PART
 .additions{
     display: flex;
     padding-bottom: 7%;
@@ -81,7 +82,7 @@
         }
     }
 }
-
+        // BOTTOM PART
 .nemo{
     display: flex;
 
@@ -108,6 +109,7 @@
     }
 }
 
+// SECTION 3 - GET IN TOUCH
 .section3{
     background-color: $quaternary;
 
@@ -165,6 +167,7 @@
     }
 }
 
+// SECTION 4 - MONTH PROFILE
 .section4{
     background-color: $quaternary;
 
@@ -213,6 +216,7 @@
     }
 }
 
+ // GALLERY
 .gallery{
     background-color: $secondary;
     padding: 50px 0;
@@ -226,6 +230,7 @@
     }
 }
 
+// FOOTER
 footer{
     background-color: $primary;
     text-align: center;
