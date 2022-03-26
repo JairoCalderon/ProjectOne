@@ -450,6 +450,7 @@ main {
   margin-bottom: 50px;
 }
 
+.newUserComment,
 .user1,
 .user2 {
   display: -webkit-box;
@@ -457,18 +458,22 @@ main {
   display: flex;
   padding-bottom: 70px;
 }
+.newUserComment .userImgContainer,
 .user1 .userImgContainer,
 .user2 .userImgContainer {
   width: 75%;
 }
+.newUserComment .userImgContainer img,
 .user1 .userImgContainer img,
 .user2 .userImgContainer img {
   width: 100%;
 }
+.newUserComment .userCommentContainer,
 .user1 .userCommentContainer,
 .user2 .userCommentContainer {
   padding-left: 30px;
 }
+.newUserComment .userCommentContainer p:first-child,
 .user1 .userCommentContainer p:first-child,
 .user2 .userCommentContainer p:first-child {
   padding-bottom: 10px;
@@ -694,14 +699,16 @@ footer {
     text-align: center;
   }
 
-  .user1,
+  .newUserComment,
+.user1,
 .user2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .user1 .userImgContainer,
+  .newUserComment .userImgContainer,
+.user1 .userImgContainer,
 .user2 .userImgContainer {
     width: 50%;
     margin: 0 auto;

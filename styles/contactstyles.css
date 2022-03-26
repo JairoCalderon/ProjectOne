@@ -626,14 +626,16 @@ footer {
     text-align: center;
   }
 
-  .user1,
+  .newUserComment,
+.user1,
 .user2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .user1 .userImgContainer,
+  .newUserComment .userImgContainer,
+.user1 .userImgContainer,
 .user2 .userImgContainer {
     width: 50%;
     margin: 0 auto;
