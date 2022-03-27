@@ -1,23 +1,27 @@
 const formEl = document.querySelector("form")
-// console.log(formEl)
 
 formEl.addEventListener(`submit`, function (event) {
     event.preventDefault();
 
     const userName = formEl[0].value;
-    console.log(userName)
-
     const userCommentContent = formEl[2].value;
-    console.log(userCommentContent)
 
     formEl[0].value = "";
     formEl[1].value = "";
     formEl[2].value = "";
 
-    const todayDate = Date()
-    // const todayDate = (Date(), `format`, `l - F - d - y`)
-    // todayDate.toDate()
-    console.log(todayDate)
+    function todayDate() {
+
+        const dateFormatation = {
+            weekday: "long",
+            month: "long",
+            day: "2-digit",
+            year: "numeric"
+        };
+
+        const currentDate = new Date();
+        return currentDate.toLocaleDateString("en-US", dateFormatation)
+    }
 
 
     const newComment = document.querySelector(".user1");
@@ -28,9 +32,12 @@ formEl.addEventListener(`submit`, function (event) {
                 <img src="https://picsum.photos/125/125" alt="profile head picture of lastest user">
             </div>
             <div class="userCommentContainer">
-                <p>${todayDate} by ${userName}</p>
+                <p>${todayDate()} by ${userName}</p>
                 <p>${userCommentContent}</p>
             </div>`;
+
+    // document.querySelector("#userCommentContent").appendChild(userCommentContent)
+
 
     // const newUserImg = document.createElement("img")
     // newUserImg.setAttribute(`src`, `https://picsum.photos/500/500`)

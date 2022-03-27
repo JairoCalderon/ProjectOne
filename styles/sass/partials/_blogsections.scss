@@ -43,14 +43,12 @@ main{
     }
 }
 
-.newUserComment,
-.user1,
-.user2{
+.user1{
     display: flex;
     padding-bottom: 70px;
 
     .userImgContainer{
-        width: 75%;
+        width: 20%;
 
         img{
             width: 100%;
@@ -59,12 +57,23 @@ main{
 
     .userCommentContainer{
         padding-left: 30px;
+        width: 80%;
 
         & p:first-child{
             padding-bottom: 10px;
         }
     }
 }
+
+// .figure{
+
+
+//     img{
+//         height: 100%;
+//         width: 100%;
+//         object-fit: contain;
+//     }
+// }
 
 .interact{
     padding-bottom: 80px;

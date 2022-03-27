@@ -184,15 +184,19 @@
 //END OF HOMEPAGE STYLE
 
 //START OF BLOG PAGE STYLE
-        .newUserComment,
-        .user1,
-        .user2{
+        .user1{
             flex-direction: column;
 
             .userImgContainer{
                 width: 50%;
                 margin: 0 auto;
                 padding-bottom: 10px;
+            }
+
+            .userCommentContainer{
+                padding-left: 0px;
+                width: 100%;
+                text-align: center;
             }
         }
 
